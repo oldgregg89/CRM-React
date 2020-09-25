@@ -146,6 +146,6 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 ## Remember you can always reach out to the editors if this doesn't make sense.
 ![Monkey reading](https://media.giphy.com/media/SiMcadhDEZDm93GmTL/giphy.gif)
-
+------------------------------------
 
 
