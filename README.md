@@ -9,8 +9,8 @@ By Ian Gregg
 Basic Customer Relations Management Platform built with react, that is non industry specific but can allow for future developers to add on more features or customize the platform itself. Features of the platform allow for user authentication with two levels of credentials, first is the member login and 2nd is the leadership login. 
 
 Concept design for the project:
-![]()
 
+![CRM](images/CRM.jpg)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
