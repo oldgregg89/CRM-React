@@ -7,15 +7,15 @@ By Ian Gregg
 
 ## Description 
 
-Basic Customer Relations Management Platform built with react, that is non industry specific but can allow for future developers to add on more features or customize the platform itself. Features of the platform allow for user authentication with two levels of credentials, first is the member login and 2nd is the leadership login. 
+Basic Customer Relations Management (CRM) Platform built with react, that is non industry specific but can allow for future developers to add on more features or customize the platform itself. Features of the platform allow for user authentication with two levels of credentials, first is the member login and 2nd is the leadership login. Members have a finite view of the CRM set to only information they have entered while the leadership can see all information thats been entered and make edits.
 
-Concept design for the project:
+**Concept design for the project:**
 
 ![CRM](images/CRM.jpg)
 
 ## Use Case
 
-This would be geared to business leadership and sales folks. This would allow the leadership to see the projected health of the business and allow the team members to keep track of all the customer information for their book of business. This would be able to be a marketed product in the real world for various industries and allow for a basic framework to build off of later to hone into a specific company.
+This would be geared to business leadership and sales folks. This would allow the leadership to see the projected health of the business and allow the team members to keep track of all the customer information for their book of business. This would be able to be a marketed product in the real world for various industries and allow for a basic framework to build off of later to hone into a specific company or vertical.
 
 ## Minimum Viable Product
 
@@ -37,6 +37,8 @@ This would be geared to business leadership and sales folks. This would allow th
 * Redux
 
 * Sanity(API)
+
+* FireBase
 
 ## Additional Features
 
@@ -60,9 +62,6 @@ This would be geared to business leadership and sales folks. This would allow th
 * Gatsby
 * Contentful
 * Netlify
-
-
-
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
