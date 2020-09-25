@@ -12,6 +12,57 @@ Concept design for the project:
 
 ![CRM](images/CRM.jpg)
 
+## Use Case
+
+This would be geared to business leadership and sales folks. This would allow the leadership to see the projected health of the business and allow the team members to keep track of all the customer information for their book of business. This would be able to be a marketed product in the real world for various industries and allow for a basic framework to build off of later to hone into a specific company.
+
+## Minimum Viable Product
+
+* A database of contacts
+  * input by a user
+
+* Can see a projection of sales (pipeline)
+  * Able to view the scope of the their entire book of business
+
+* Interactive platform with various tabs for various views into the business as a admin or team member
+  * Have a list of tabs for the vaious biews that the user can access.
+
+## Tools for MVP
+
+* React
+
+* Google Draw
+
+* Redux
+
+* Sanity(API)
+
+## Additional Features
+
+* Fully stylized and unified theme
+  * color sceme & layout is unifed but neutral enough to be changed to the developers specs.
+* A user can set up a specified profile 
+  * personalized picture
+  * settings for emails 
+  * offical title
+
+* Have the email login with credentials
+  * password protected authentification 
+  * Password recovery system
+
+* Member or leadership profile for the user to edit
+  * Members have a limited view of the platform only showing their own imputs
+  * Leadership have a full scope of the company can make changes for memebers.
+
+## Tools for Additional Features
+
+* Gatsby
+* Contentful
+* Netlify
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
