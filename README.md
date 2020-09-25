@@ -1,5 +1,5 @@
 # Customer Relations Management Platform 
--------------------------------------
+
 
 #### _CRM UI made with react, 2020 ver 1.0.0_
 
