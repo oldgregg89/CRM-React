@@ -13,6 +13,8 @@ function NewDiveLogForm(props){
 
       return firestore.collection('contact').add ({
 
+        firstName: event.target.firstName.value,
+        lastName: event.target.lastName.value,
         
       }
     );
