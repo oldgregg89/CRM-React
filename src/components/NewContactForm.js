@@ -15,7 +15,12 @@ function NewDiveLogForm(props){
 
         firstName: event.target.firstName.value,
         lastName: event.target.lastName.value,
-        
+        phoneNumber: event.target.phoneNumber.value,
+        email: event.target.email.value,
+        contract: event.target.contract.value,
+        companyName: event.target.companyName.value,
+        notes: event.target.notes.value,
+        contractClosed: event.target.contractClosed.value,
       }
     );
   }
