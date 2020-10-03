@@ -1,30 +1,17 @@
 import React from "react";
-import Header from "./Header";
-import ContactControl from "./ContactControl";
-import Container from "react-bootstrap/Container";
-import './App.css';
-import Signin from "./SignIn";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import PropTypes from "prop-types";
 
-
-function App(){
-  return (
+function Contact(props){
+  return(
     <React.Fragment>
-      <Router>
-          <Header />
-        <Container style={{ marginTop: '150px'}}>
-          <Switch>
-          <Route path="/SignIn">
-            <Signin />
-          </Route>
-            <Route path="/">
-              <ContactControl />
-            </Route>
-          </Switch>
-        </Container>
-      </Router>
+      <div onClick = {() => props.whenContactClicked(props.id)}>
+        <h3></h3>
+        <hr/>
+      </div>
     </React.Fragment>
   );
 }
 
-export default App;
+Contact.PropTypes = {
+  
+}
