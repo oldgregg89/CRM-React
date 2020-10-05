@@ -21,3 +21,10 @@ function ContactDetail(props){
     </React.Fragment>
   );
 }
+
+Contact.propTypes = {
+  contact: PropTypes.object,
+  onClickingDelete: PropTypes.func,
+};
+
+export default ContactDetail;
