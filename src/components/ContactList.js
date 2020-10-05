@@ -9,14 +9,14 @@ function ContactList(props){
     { collection: 'contact' }
   ]);
 
-  const contacts = useSelector(state => state.firestore.ordered.diveLog);
+  const contacts = useSelector(state => state.firestore.ordered.contact);
 
   if (isLoaded(contacts)) {
 
     return (
       <React.Fragment>
         <hr/>
-        {diveLogs.map((contact) => {
+        {contacts.map((contact) => {
           return <Contact
           whenContactClicked = { props.onContactSelection }
           firstName={contact.firstName}
