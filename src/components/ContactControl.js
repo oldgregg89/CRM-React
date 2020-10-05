@@ -108,7 +108,7 @@ class ContactControl extends React.Component {
         CurrentVisableState = <ContactDetail contact={this.state.SelectedItem} onClickingDelete={this.handleDeleteContact} onClickingEdit={this.state.handleClickEdit}></ContactDetail>
         buttonText= "Return"
       } else if (this.props.FormSwitch) {
-        
+        CurrentVisableState = <NewContactForm onNewContactCreation={this.}
       }
     }
   }
