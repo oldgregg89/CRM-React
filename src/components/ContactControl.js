@@ -64,7 +64,53 @@ class ContactControl extends React.Component {
   }
 
   handleClick = () => {
-    if (this.state.SelectedItem !=null)
+    if (this.state.SelectedItem !=null) {
+      this.setState({
+        editing: false,
+        SelectedItem: null
+      });
+    } else {
+      const { dispatch } = this.props
+      const action = c.toggleForm()
+      dispatch(action)
+    }
+  }
+
+  handleClickEdit = (id) => {
+    this.setState({
+      editing: true
+    })
+  }
+
+  render() {
+    let CurrentVisableState = null;
+    let buttonText = null;
+    const auth = this.props.firebase.auth();
+    if (!isLoaded(auth)) {
+      return (
+        <React.Fragment>
+          <h1>Loading...</h1>
+        </React.Fragment>
+      )
+    }
+    if ((isLoaded(auth)) && (auth.currentUser == null)) {
+      return (
+        <React.Fragment>
+          <h3>You need to be signed in to use this application</h3>
+        </React.Fragment>
+      )
+    }
+    if ((isLoaded(auth)) && (auth.currentUser !=null)) {
+      if(this.state.editing){
+        CurrentVisableState = <EditContactForm onEditContact={this.handleEditContact} contact={this.state.SelectedItem}></EditContactForm>
+        buttonText= "PlaceHolder"
+      } else if (this.state.SelectedItem !== null) {
+        CurrentVisableState = <ContactDetail contact={this.state.SelectedItem} onClickingDelete={this.handleDeleteContact} onClickingEdit={this.state.handleClickEdit}></ContactDetail>
+        buttonText= "Return"
+      } else if (this.props.FormSwitch) {
+        
+      }
+    }
   }
 
 }
