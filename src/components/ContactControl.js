@@ -108,9 +108,32 @@ class ContactControl extends React.Component {
         CurrentVisableState = <ContactDetail contact={this.state.SelectedItem} onClickingDelete={this.handleDeleteContact} onClickingEdit={this.state.handleClickEdit}></ContactDetail>
         buttonText= "Return"
       } else if (this.props.FormSwitch) {
-        CurrentVisableState = <NewContactForm onNewContactCreation={this.}
+        CurrentVisableState = <NewContactForm onNewContactCreation={this.handleAddNewContact}></NewContactForm>
+        buttonText="return"
+      } else {
+        CurrentVisableState = <ContactList ContactList={this.props.ContactList} onContactSelection={this.handleChangedSelectedContact}></ContactList>
+        buttonText = "Add Contact"
       }
     }
+    return (
+      <React.Fragment>
+        {CurrentVisableState}
+        <button varient="primary" onClick={this.handleClick}>{buttonText}</button>
+      </React.Fragment>
+    );
   }
-
 }
+
+ContactControl.propTypes = {
+  ContactList: PropTypes.object,
+}
+
+const mapStatetoProps = (state) => {
+  return {
+    ContactList: state.ContactList,
+    FormSwitch: state.FormSwitch
+  }
+}
+
+ContactControl = connect(mapStatetoProps)(ContactControl)
+export default withFirestore(ContactControl);
