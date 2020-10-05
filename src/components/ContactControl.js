@@ -54,10 +54,17 @@ class ContactControl extends React.Component {
           phoneNumber: contact.get("phoneNumber"),
           email: contact.get("email"),
           contract: contact.get("contract"),
-          
+          companyName: contact.get("companyName"),
+          notes: contact.get("notes"),
+          contractClosed: contact.get("contractClosed"),
+          id: contact.id
         }
       this.setState({SelectedItem: firestoreContact });
     });
+  }
+
+  handleClick = () => {
+    if (this.state.SelectedItem !=null)
   }
 
 }
