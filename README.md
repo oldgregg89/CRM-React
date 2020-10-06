@@ -63,6 +63,8 @@ This would be geared to business leadership and sales folks. This would allow th
 * Contentful
 * Netlify
 
+## Features of the Application
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
