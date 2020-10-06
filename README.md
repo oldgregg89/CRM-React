@@ -65,6 +65,9 @@ This would be geared to business leadership and sales folks. This would allow th
 
 ## Features of the Application
 
+* Contacts
+  * A user can add their contacts in the database and keep track of the list.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
