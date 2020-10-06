@@ -2,11 +2,14 @@ import firebase from "firebase/app";
 import React from "react";
 import { withRouter } from 'react-router-dom';
 
-function Signin(props) {
+function SignIn(props) {
+  console.log("here")
   const doSignUp = (event) => {
+    console.log("here")
     event.preventDefault();
     const email = event.target.email.value;
     const password = event.target.password.value;
+    console.log(email);
     firebase.auth().createUserWithEmailAndPassword(email, password).then(function(){
       console.log("successfully signed up!");
       props.history.push("/")
@@ -68,4 +71,4 @@ return (
   )
 }
 
-export default withRouter(Signin)
+export default withRouter(SignIn)

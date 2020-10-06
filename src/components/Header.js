@@ -1,20 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Header(props) {
+function Header() {
   return (
     <React.Fragment>
-      <h1>Customer relations manager Tracker</h1>
+      <h1>Customer Relations Manager Tracker</h1>
       <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/signin">Sign In</Link>
-        </li>
-        <li>
-          <Link to="/signin">Sign Out</Link>
-        </li>
+          <Link to="/">Home</Link><br></br>
+          <Link to="/signin">Sign In</Link><br></br>
+          <Link to="/signin">Sign Out</Link><br></br>
       </ul>
     </React.Fragment>
   );
