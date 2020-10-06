@@ -2,7 +2,6 @@ import React from "react";
 import Header from "./Header";
 import ContactControl from "./ContactControl";
 import Container from "react-bootstrap/Container";
-import './App.css';
 import Signin from "./SignIn";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 

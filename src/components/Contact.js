@@ -12,7 +12,7 @@ function Contact(props){
   );
 }
 
-Contact.PropTypes = {
+Contact.propTypes = {
   firstName: PropTypes.string.isRequired,
   lastName: PropTypes.string.isRequired,
   phoneNumber: PropTypes.string.isRequired,

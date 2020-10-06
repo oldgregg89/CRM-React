@@ -22,7 +22,7 @@ function ContactDetail(props){
   );
 }
 
-Contact.propTypes = {
+ContactDetail.propTypes = {
   contact: PropTypes.object,
   onClickingDelete: PropTypes.func,
 };

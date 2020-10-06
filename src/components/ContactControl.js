@@ -39,7 +39,7 @@ class ContactControl extends React.Component {
   handleDeleteContact = (id) => {
     const {dispatch} = this.props;
     const action = {
-      type = 'DELETE_CONTACT',
+      type: 'DELETE_CONTACT',
       id: id
     }
     dispatch(action);
