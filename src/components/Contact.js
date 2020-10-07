@@ -20,7 +20,7 @@ Contact.propTypes = {
   contract: PropTypes.number.isRequired,
   companyName:PropTypes.string.isRequired,
   notes: PropTypes.string,
-  contractClosed: PropTypes.bool,
+  // contractClosed: PropTypes.bool,
   id:PropTypes.string,
   whenContactClicked:PropTypes.func
 };

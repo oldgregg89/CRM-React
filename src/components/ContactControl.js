@@ -56,7 +56,7 @@ class ContactControl extends React.Component {
           contract: contact.get("contract"),
           companyName: contact.get("companyName"),
           notes: contact.get("notes"),
-          contractClosed: contact.get("contractClosed"),
+          // contractClosed: contact.get("contractClosed"),
           id: contact.id
         }
       this.setState({SelectedItem: firestoreContact });
@@ -76,7 +76,7 @@ class ContactControl extends React.Component {
     }
   }
 
-  handleClickEdit = (id) => {
+  handleClickEdit = () => {
     this.setState({
       editing: true
     })

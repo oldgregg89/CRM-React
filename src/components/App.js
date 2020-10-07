@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import ContactControl from "./ContactControl";
 import Container from "react-bootstrap/Container";
-import Signin from "./SignIn";
+import SignIn from "./SignIn";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
@@ -14,7 +14,7 @@ function App(){
         <Container style={{ marginTop: '150px'}}>
           <Switch>
           <Route path="/SignIn">
-            <Signin />
+            <SignIn />
           </Route>
             <Route path="/">
               <ContactControl />

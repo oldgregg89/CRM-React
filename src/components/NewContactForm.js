@@ -20,7 +20,7 @@ function NewContactForm(props){
         contract: event.target.contract.value,
         companyName: event.target.companyName.value,
         notes: event.target.notes.value,
-        contractClosed: event.target.contractClosed.value,
+        // contractClosed: event.target.contractClosed.value,
       }
     );
   }

@@ -2,7 +2,7 @@ import firebase from "firebase/app";
 import { withRouter } from 'react-router-dom';
 import React, { useState } from "react";
 
-function Signin(props) {
+function SignIn(props) {
 
   const [ viewSwitch, setViewSwitch ] = useState(true);
   const [ buttonText, setButtonText] = useState("Sign Up")
@@ -11,9 +11,7 @@ function Signin(props) {
     event.preventDefault();
     const email = event.target.email.value;
     const password = event.target.password.value;
-    const name = event.target.name.value;
-    const company = event.target.name.value;
-    firebase.auth().createUserWithEmailAndPassword(email, password, name, company).then(function(){
+    firebase.auth().createUserWithEmailAndPassword(email, password).then(function(){
       console.log("successfully signed up!");
       props.history.push("/")
     }).catch(function(error) {
@@ -61,7 +59,6 @@ function Signin(props) {
         <button variant="primary" onClick={doSignOut}>Sign out</button>
     </React.Fragment>
   )
-
   const doSwitchView = () => {
     if (viewSwitch === true) {
       setSignInView(
@@ -120,4 +117,4 @@ return (
   )
 }
 
-export default withRouter(Signin)
+export default withRouter(SignIn)

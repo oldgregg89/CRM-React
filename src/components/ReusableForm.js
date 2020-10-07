@@ -52,12 +52,13 @@ function ReusableForm(props) {
             name='notes'
             placeholder='Notes.' />
         </Form.Group>
-        <Form.Group>
+        {/* <Form.Group>
           <Form.Control
             as='bool'
             name='contractClosed'
-            placeholder='ContractClosed.' />
-          </Form.Group>
+            placeholder='ContractClosed.' 
+            value = 'false'/>
+          </Form.Group> */}
         <div style={{padding: 10}}>
           <Button variant="info" type='submit'>{props.buttonText}</Button>
         </div>
@@ -115,13 +116,13 @@ function ReusableForm(props) {
             placeholder='Notes.'
             defaultValue= {contact.notes} />
         </Form.Group>
-        <Form.Group>
+        {/* <Form.Group>
           <Form.Control
             as='bool'
             name='contractClosed'
             placeholder='ContractClosed.'
             defaultValue= {contact.contractClosed} />
-          </Form.Group>
+          </Form.Group> */}
         <div style={{padding: 10}}>
           <Button variant="info" type='submit'>{props.buttonText}</Button>
         </div>
