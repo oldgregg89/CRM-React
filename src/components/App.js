@@ -5,7 +5,7 @@ import ContactControl from "./ContactControl";
 import Container from "react-bootstrap/Container";
 import SignIn from "./SignIn";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
+import "./App.css";
 
 function App(){
   return (
@@ -22,7 +22,7 @@ function App(){
             </Route>
           </Switch>
         </Container>
-          <Footer />
+        <Footer />
       </Router>
     </React.Fragment>
   );

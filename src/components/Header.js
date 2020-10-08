@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./App.css";
 
 function Header() {
   return (
     <React.Fragment>
-      <div>
+      <div className='headerClass'>
         <h1>Customer Relations Manager Tracker</h1>
           <p>
             <Link to="/">Home</Link>

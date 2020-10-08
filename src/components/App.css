@@ -1,3 +1,27 @@
-.Header {
-  
+.App {
+  text-align: center;
 }
+
+.container {
+  background-size: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color:gray;
+  border-radius: 20px;
+  border-style: solid;
+  text-align: center;
+  opacity: 90%;
+}
+
+.headerClass {
+  background-color: aliceblue;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.footerClass {
+  background-color: aliceblue;
+  border-style: solid;
+  position: fixed;
+}
+
