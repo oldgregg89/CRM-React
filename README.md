@@ -1,4 +1,6 @@
-# Customer Relations Management Platform 
+# Customer Relations Management Platform (Anomalous)
+
+![logo](images/anomalous.jpg)
 
 
 #### _CRM UI made with react, 2020 ver 1.0.0_
