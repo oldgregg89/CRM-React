@@ -15,7 +15,7 @@ function ContactDetail(props){
       <p><strong>Notes:</strong>{props.contact.notes}</p>
       <p><strong>Contract Closed (T/F):</strong>{props.contact.contractClosed}</p>
 
-      <Button style={{margin: 10}} variant="success" onClick={props.onClickingEdit}>Edit Contact</Button>
+      <Button style={{margin: 10}} variant="success" onClick={() => props.onClickingEdit()}>Edit Contact</Button>
       <Button variant="danger" onClick={() => props.onClickingDelete(props.contact.id) }>Delete Contact</Button>
       <hr/>
     </React.Fragment>
