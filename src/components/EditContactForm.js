@@ -18,8 +18,8 @@ function EditContactForm(props){
         contract: event.target.contract,
         companyName: event.target.companyName,
         notes: event.target.notes,
-        contractClosed: event.target.contractClosed,
       }
+     
       return firestore.update({collection: "contact", doc: contact.id}, propertiesToUpdate)
   }
 
